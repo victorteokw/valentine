@@ -6,6 +6,7 @@ import { nextPhase } from 'actions/phase';
 import First from '../First';
 import Second from '../Second';
 import Third from '../Third';
+import piNgHi from './pi-ng-hi.mp3';
 
 class App extends React.Component {
 
@@ -17,6 +18,19 @@ class App extends React.Component {
   }
 
   render() {
+    return <div class="app">
+      <embed
+        name="music"
+        src={piNgHi}
+        loop="true"
+        hidden="true"
+        autostart="true"
+      />
+      {this.renderBody()}
+    </div>;
+  }
+
+  renderBody() {
     if (this.props.phase.current === 'first') {
       return <First />;
     } else if (this.props.phase.current === 'second') {
