@@ -4,9 +4,9 @@
   "description": "Online valentine card for my girl friend.",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "webpack-dev-server"
   },
-  "author": "",
+  "author": "Zhang Kai Yu",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.2.2",

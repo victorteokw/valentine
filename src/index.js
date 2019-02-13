@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
-import App from './views/App';
+import Root from './views/Root';
 
 const render = Component => {
   ReactDOM.render(
@@ -12,12 +12,12 @@ const render = Component => {
   );
 };
 
-render(App);
+render(Root);
 
 // Webpack Hot Module Replacement API
 if (module.hot) {
-  module.hot.accept('./views/App', () => {
-    const NewApp = require('./views/App').default;
-    render(NewApp);
+  module.hot.accept('./views/Root', () => {
+    const NewRoot = require('./views/Root').default;
+    render(NewRoot);
   });
 }
