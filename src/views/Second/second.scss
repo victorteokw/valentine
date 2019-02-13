@@ -1,0 +1,131 @@
+@keyframes show-envelope {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes show-word {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes hide-second-page {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translateY(-100vh);
+  }
+}
+
+.second {
+  padding: 10.5vh 0;
+  .icon {
+    position: relative;
+    text-align: center;
+    flex: 0 1 100%;
+    animation-name: show-envelope;
+    animation-duration: 1.6s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 9.6s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    margin-bottom: 120px;
+    img {
+      width: 68px;
+      height: 68px;
+    }
+    .prompt {
+      position: absolute;
+      left: calc(50% + 34px + 32px);
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      letter-spacing: 4px;
+      font-size: 13px;
+      opacity: 0;
+      animation-name: show-envelope;
+      animation-duration: 1.6s;
+      animation-timing-function: ease-in-out;
+      animation-delay: 11.2s;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  .today {
+    margin-bottom: 24px;
+    text-align: center;
+    flex: 0 1 100%;
+    font-size: 20px;
+    letter-spacing: 3px;
+    opacity: 0;
+    animation-name: show-word;
+    animation-duration: 1.6s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+  }
+
+  .weareapart {
+    margin-bottom: 24px;
+    text-align: center;
+    flex: 0 1 100%;
+    font-size: 20px;
+    letter-spacing: 3px;
+    opacity: 0;
+    animation-name: show-word;
+    animation-duration: 1.6s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 3.2s;
+    animation-fill-mode: forwards;
+  }
+
+  .cannot {
+    margin-bottom: 24px;
+    text-align: center;
+    flex: 0 1 100%;
+    font-size: 20px;
+    letter-spacing: 3px;
+    opacity: 0;
+    animation-name: show-word;
+    animation-duration: 1.6s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 5.6s;
+    animation-fill-mode: forwards;
+  }
+
+  .soi {
+    margin-bottom: 24px;
+    text-align: center;
+    flex: 0 1 100%;
+    font-size: 20px;
+    letter-spacing: 3px;
+    opacity: 0;
+    animation-name: show-word;
+    animation-duration: 1.6s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+  }
+
+  .please {
+    text-align: center;
+    flex: 0 1 100%;
+    font-size: 20px;
+    letter-spacing: 3px;
+    opacity: 0;
+    animation-name: show-word;
+    animation-duration: 1.6s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 9.6s;
+    animation-fill-mode: forwards;
+  }
+}

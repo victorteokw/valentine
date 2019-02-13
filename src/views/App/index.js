@@ -4,6 +4,7 @@ import picking from 'lib/picking';
 import './global.scss';
 import { nextPhase } from 'actions/phase';
 import First from '../First';
+import Second from '../Second';
 
 class App extends React.Component {
 
@@ -11,16 +12,14 @@ class App extends React.Component {
     this.props.dispatch(nextPhase({ name: 'first' }));
     setTimeout(() => {
       this.props.dispatch(nextPhase({ name: 'second' }));
-      setTimeout(() => {
-        this.props.dispatch(nextPhase({ name: 'third' }));
-
-      }, 3000);
-    }, 6600);
+    }, 8800);
   }
 
   render() {
     if (this.props.phase.current === 'first') {
       return <First />
+    } else if (this.props.phase.current === 'second') {
+      return <Second />
     }
     return (
       <div>
