@@ -7,6 +7,15 @@
   }
 }
 
+@keyframes enlarge-envelope {
+  from: {
+    transform: none;
+  }
+  to {
+    transform: scale(20.0, 20.0);
+  }
+}
+
 @keyframes show-word {
   from {
     opacity: 0;
@@ -20,15 +29,21 @@
 
 @keyframes hide-second-page {
   from {
-    transform: none;
+    opacity: 1;
   }
   to {
-    transform: translateY(-100vh);
+    opacity: 0;
   }
 }
 
 .second {
   padding: 10.5vh 0;
+  &.open {
+    animation-name: hide-second-page;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
   .icon {
     position: relative;
     text-align: center;
@@ -43,6 +58,14 @@
     img {
       width: 68px;
       height: 68px;
+      transition: transform 1.2s ease-in-out;
+      &.open {
+        transform: scale(5.0, 5.0);
+        animation-name: enlarge-envelope;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        animation-duration: 1.2s;
+      }
     }
     .prompt {
       position: absolute;

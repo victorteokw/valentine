@@ -1,0 +1,25 @@
+.third {
+  &.fadeout {
+    opacity: 0;
+  }
+  display: block;
+  padding: 50px 22px;
+  text-align: left;
+  letter-spacing: 4px;
+  font-size: 23px;
+  line-height: 36px;
+  opacity: 1;
+  transition: opacity 2s;
+  .title {
+
+  }
+  .body {
+
+  }
+  .love {
+    text-align: right;
+  }
+  .name {
+    text-align: right;
+  }
+}

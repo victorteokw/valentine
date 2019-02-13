@@ -5,6 +5,7 @@ import './global.scss';
 import { nextPhase } from 'actions/phase';
 import First from '../First';
 import Second from '../Second';
+import Third from '../Third';
 
 class App extends React.Component {
 
@@ -17,9 +18,11 @@ class App extends React.Component {
 
   render() {
     if (this.props.phase.current === 'first') {
-      return <First />
+      return <First />;
     } else if (this.props.phase.current === 'second') {
-      return <Second />
+      return <Second />;
+    } else if (this.props.phase.current === 'third') {
+      return <Third />;
     }
     return (
       <div>
