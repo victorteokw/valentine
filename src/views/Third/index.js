@@ -43,7 +43,7 @@ class Third extends React.Component {
             this.setState({ fadeout: true });
             setTimeout(() => {
               this.props.dispatch(nextPhase({ name: 'fourth' }));
-            }, 2000);
+            }, 6000);
           }, 2000);
         }
       }

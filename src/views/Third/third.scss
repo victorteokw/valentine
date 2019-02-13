@@ -1,15 +1,17 @@
 .third {
   &.fadeout {
+    transform: translateY(-100%);
     opacity: 0;
   }
   display: block;
-  padding: 50px 22px;
+  padding: 50px 28px;
   text-align: left;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   font-size: 23px;
   line-height: 36px;
   opacity: 1;
-  transition: opacity 2s;
+  transform: none;
+  transition: opacity 6s, transform 6s;
   .title {
 
   }

@@ -1,0 +1,28 @@
+.fourth {
+  padding: 9vh 0;
+  .icon {
+    text-align: center;
+    flex: 0 1 100%;
+    animation-name: show-heart;
+    animation-duration: 2.2s;
+    animation-timing-function: ease-in-out;
+    img {
+      width: 86px;
+      height: 86px;
+    }
+  }
+
+  .forever {
+    text-align: center;
+    flex: 0 1 100%;
+    font-size: 20px;
+    letter-spacing: 3px;
+    opacity: 0;
+    animation-name: show-todayis;
+    animation-duration: 1.1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2.2s;
+    animation-fill-mode: forwards;
+  }
+
+}
