@@ -1,5 +1,7 @@
 import { combineReducers } from 'redux';
 
-export default combineReducers({
+import phase from './phase';
 
+export default combineReducers({
+  phase
 });

@@ -5,7 +5,7 @@ import App from 'views/App';
 
 export default ({ store }) => (
   <Provider store={store}>
-    <div style={{ height: '100%' }}>
+    <div style={{ height: '100vh' }}>
       <App />
       <DevTools />
     </div>

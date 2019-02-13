@@ -1,0 +1,89 @@
+@keyframes show-heart {
+  from {
+    opacity: 0;
+    transform: translateY(-36px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes show-todayis {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes show-our-day {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes hide-first-page {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.first {
+  padding: 9vh 0;
+  animation-name: hide-first-page;
+  animation-duration: 2.2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 4.4s;
+  animation-fill-mode: forwards;
+  .icon {
+    text-align: center;
+    flex: 0 1 100%;
+    animation-name: show-heart;
+    animation-duration: 2.2s;
+    animation-timing-function: ease-in-out;
+    img {
+      width: 86px;
+      height: 86px;
+    }
+  }
+
+  .todayis {
+    margin-bottom: 24px;
+    text-align: center;
+    flex: 0 1 100%;
+    font-size: 20px;
+    letter-spacing: 3px;
+    opacity: 0;
+    animation-name: show-todayis;
+    animation-duration: 1.1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2.2s;
+    animation-fill-mode: forwards;
+  }
+
+  .ourday {
+    text-align: center;
+    flex: 0 1 100%;
+    font-size: 20px;
+    letter-spacing: 3px;
+    opacity: 0;
+    animation-name: show-our-day;
+    animation-duration: 1.1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 3.3s;
+    animation-fill-mode: forwards;
+  }
+
+}
