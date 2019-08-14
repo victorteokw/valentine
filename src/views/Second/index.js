@@ -44,7 +44,7 @@ class Second extends React.Component {
           <div className="prompt">
             请打开它
             <br />
-            ↓
+            ←
           </div>
         </div>
       </div>
