@@ -31,11 +31,11 @@ class Second extends React.Component {
         classNames("page", "second", { open: this.state && this.state.open })
       }>
         <div className="text-lines">
-          <div className="today">然而今年今天</div>
-          <div className="weareapart">我们天各一方</div>
-          <div className="cannot">不能陪在你身边</div>
-          <div className="soi">所以</div>
-          <div className="please">我准备了一份特别的心意</div>
+          <div className="today">还没来得及准备</div>
+          <div className="weareapart">原来</div>
+          <div className="cannot">只要过得快乐</div>
+          <div className="soi">每天都可以是节日</div>
+          <div className="please">这里有一封信</div>
         </div>
         <div className="icon">
           <img src={envelope} className={

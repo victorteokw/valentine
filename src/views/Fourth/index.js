@@ -13,7 +13,8 @@ class Fourth extends React.Component {
           <img src={rose} />
         </div>
         <div className="text-lines">
-          <div className="forever">要永远在一起</div>
+          <div className="give-you-flower">送给你小花花</div>
+          <div className="put-in-your-heart">把它放在心里面哟</div>
         </div>
       </div>
     );

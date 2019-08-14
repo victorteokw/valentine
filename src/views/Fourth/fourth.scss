@@ -12,7 +12,7 @@
     }
   }
 
-  .forever {
+  .give-you-flower {
     text-align: center;
     flex: 0 1 100%;
     font-size: 20px;
@@ -22,6 +22,20 @@
     animation-duration: 1.1s;
     animation-timing-function: ease-in-out;
     animation-delay: 2.2s;
+    animation-fill-mode: forwards;
+  }
+
+  .put-in-your-heart {
+    margin-top: 20px;
+    text-align: center;
+    flex: 0 1 100%;
+    font-size: 20px;
+    letter-spacing: 3px;
+    opacity: 0;
+    animation-name: show-todayis;
+    animation-duration: 1.1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 5.5s;
     animation-fill-mode: forwards;
   }
 

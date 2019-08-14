@@ -8,17 +8,17 @@ import classNames from 'classnames';
 class Third extends React.Component {
 
   componentDidMount() {
-    this.title = "宝宝，";
-    this.body = "没有你的过去，孤单而消沉。有了你的陪伴，每天温馨而短暂。我一直坚定着自己的目标，不断地努力工作，去想去的城市。同样的努力，有了回响。牵起的手，两个人的步伐，和越来越相近的眼光，要一起去看最美的风景。";
-    this.love = "爱你的";
-    this.name = "宝宝";
+    this.title = "萱萱，";
+    this.body = "你要每天开心和快乐，不许有任何人惹你难过。这样才会一直漂亮而年轻。做你热爱的事情，去你向往的地方。我一直坚定着自己的目标，在远方不断地努力。也许同样的努力，在某天会有了回响。岁月静好，光阴荏苒。要让日子短暂而温馨，要去看人生里面最美的风景。";
+    this.love = "来自😈可恶的小叔叔";
+    this.name = "开宇";
     this.current = 0;
     this.speed = 290;
     this.currentPart = 'title';
     this.partOrder = ['title', 'body', 'love', 'name'];
     const write = () => {
       if (this.current <= this[this.currentPart].length) {
-        if (["，", "。"].includes(this[this.currentPart][this.current] )) {
+        if (["，", "。", String.fromCharCode(56840)].includes(this[this.currentPart][this.current] )) {
           this.setState({
             ['written' + this.currentPart]:
               this[this.currentPart].slice(0, this.current + 1)
