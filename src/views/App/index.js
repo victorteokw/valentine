@@ -18,7 +18,7 @@ class App extends React.Component {
   }
 
   render() {
-    return <div class="app">
+    return <div className="app">
       {this.renderBody()}
     </div>;
   }
