@@ -1,10 +1,3 @@
-@font-face {
-  font-family: YouSong;
-  src: url("./fzyousjw_503l.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
 * {
   box-sizing: border-box;
   user-select: none;
@@ -18,9 +11,9 @@ html, body, #application {
 }
 
 html {
-  background-color: #eb76a2;
+  background-color: #f8db32;
   color: white;
-  font-family: YouSong;
+  font-family: Songti TC, 'Times New Roman', Times, serif;
 }
 
 .app {

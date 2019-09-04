@@ -70,8 +70,7 @@
     .prompt {
       position: absolute;
       left: calc(50% + 34px + 32px);
-      writing-mode: vertical-rl;
-      text-orientation: upright;
+      top: 35%;
       letter-spacing: 4px;
       font-size: 13px;
       opacity: 0;

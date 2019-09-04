@@ -13,8 +13,8 @@ class First extends React.Component {
           <img src={heart} />
         </div>
         <div className="text-lines">
-          <div className="todayis">听到你说今天是节日</div>
-          <div className="ourday">有些突然呢</div>
+          <div className="todayis">To Miss Ho</div>
+          <div className="ourday">Tomorrow is your birthday</div>
         </div>
       </div>
     );

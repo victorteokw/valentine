@@ -31,20 +31,18 @@ class Second extends React.Component {
         classNames("page", "second", { open: this.state && this.state.open })
       }>
         <div className="text-lines">
-          <div className="today">还没来得及准备</div>
-          <div className="weareapart">原来</div>
-          <div className="cannot">只要过得快乐</div>
-          <div className="soi">每天都可以是节日</div>
-          <div className="please">这里有一封信</div>
+          <div className="today">Thanks for chatting with me sweetly.</div>
+          <div className="weareapart">And giving me force and courage to struggle.</div>
+          <div className="cannot">You're like a guardian angel at the darkest night.</div>
+          <div className="soi">And you are charming at least to me.</div>
+          <div className="please">I've written a letter to you.</div>
         </div>
         <div className="icon">
           <img src={envelope} className={
             classNames({ open: this.state && this.state.open })
           } onClick={this.openEvelope.bind(this)} />
           <div className="prompt">
-            请打开它
-            <br />
-            ←
+            ← Please open it.
           </div>
         </div>
       </div>

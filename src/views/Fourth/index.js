@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import picking from 'lib/picking';
 import './fourth.scss';
-import rose from './rose.svg';
+import cake from './cake.svg';
 
 class Fourth extends React.Component {
 
@@ -10,11 +10,11 @@ class Fourth extends React.Component {
     return (
       <div className="page fourth">
         <div className="icon">
-          <img src={rose} />
+          <img src={cake} />
         </div>
         <div className="text-lines">
-          <div className="give-you-flower">送给你小花花</div>
-          <div className="put-in-your-heart">把它放在心里面哟</div>
+          <div className="give-you-flower">系喎￼￼，我冇忘記</div>
+          <div className="put-in-your-heart">生日蠟燭同蛋糕</div>
         </div>
       </div>
     );
